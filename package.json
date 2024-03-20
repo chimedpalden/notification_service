@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "audit:gems": "bundle audit check --update",
+    "audit:ruby": "bundle exec ruby-audit check",
+    "audit": "yarn audit:gems && yarn audit:ruby",
+    "postinstall": "bundle",
+    "lint": "bundle exec rubocop",
+    "commit": "cd .. && npx commit"
+  }
+}

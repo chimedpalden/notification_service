@@ -1,0 +1,87 @@
+Metrics/LineLength:
+  Max: 196
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/HashSyntax:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Exclude:
+    - spec/support/activemq_spec_helper.rb
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: false
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Lint/RescueException:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Naming/MethodName:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Style/SignalException:
+  Enabled: false
+
+Lint/UnreachableCode:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: False
+
+Metrics/ParameterLists:
+  Max: 7
+
+AllCops:
+  Exclude:
+    - bin/*
+    - db/migrate/*
+    - spec/dummy/**/*
+    - spec/rails_helper.rb
+    - spec/spec_helper.rb
+    - lib/vineti/notifications/engine.rb

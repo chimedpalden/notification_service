@@ -1,0 +1,31 @@
+{
+   "payload":{
+      "events":[
+         {
+            "event_name":"order_created",
+            "event_date":"2020-04-15T22:11:58Z",
+            "resource_id":2,
+            "resource_type":"order",
+            "data_changes":{
+
+            },
+            "performed_by":"nina@vineti.com",
+            "resource_created_at":"2020-04-15T15:11:58-07:00",
+            "resource_updated_at":"2020-04-15T15:11:58-07:00"
+         }
+      ]
+   },
+   "template_data":{
+
+   },
+   "delayed_time":null,
+   "metadata":{
+      "treatment_id":1,
+      "step_name":"patient",
+      "procedure_status":"in_progress"
+   },
+   "inbound_request": true,
+   "uid": "{{uid}}",
+   "orchestrator": {},
+   "publisher_id": "{{publisher_id}}"
+}

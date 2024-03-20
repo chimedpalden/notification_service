@@ -1,0 +1,23 @@
+{
+  "source": "no-reply@vineti.com",
+  "template": "Template Name",
+  "destination": {
+    "to_addresses": ["user@vineti.com"]
+  },
+  "template_data": {
+    "meta": {
+      "procedure": {
+        "data": { "id": 1 }
+      },
+      "procedure_step": {
+        "data": {
+          "attributes": {
+            "name": "current_step"
+          }
+        }
+      }
+    },
+    "data": {},
+    "variable": "Value"
+  }
+}

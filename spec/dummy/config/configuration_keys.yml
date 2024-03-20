@@ -1,0 +1,67 @@
+vineti_activemq_enable:
+  description: This must be set to true before using vineti-notifications services
+  data_type: boolean
+  default: false
+  groups:
+    - feature
+
+enable_virtual_topics:
+  description: This enables virtual topic implementation
+  data_type: boolean
+  default: true
+  groups:
+    - feature
+
+inbound_event_enable:
+  description: This must be set to true before using Inbound process event
+  data_type: boolean
+  default: false
+  groups:
+    - feature
+
+disable_ses:
+  description: >
+    Set this to true if you want to use the action mailer by default
+    and receive mails on the mailcatcher on http port 1080 / smtp port 1025
+  data_type: boolean
+  default: false
+  groups:
+    - aws
+
+aws_ses_access_key_id:
+  description: Access Key Id for amazon ses
+  data_type: string
+  default: stub
+  groups:
+    - aws
+
+aws_ses_secret_access_key:
+  description: Secret access key for amazon ses
+  data_type: string
+  default: stub
+  groups:
+    - aws
+
+aws_ses_region:
+  description: >
+    Region for amazon ses. The region needs to support SES for
+    notifications to work.
+  data_type: string
+  default: stub
+  groups:
+    - aws
+
+wso2_tenant_base_url:
+  description: Required base url for wso2
+  groups:
+    - wso2
+
+wso2_tenant:
+  description: required tenant for wso2
+  groups:
+    - wso2
+
+api_hostname_url:
+  description: url for the host application (vineti-platform)
+  data_type: string
+  default: http://localhost:3000

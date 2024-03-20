@@ -1,0 +1,25 @@
+- event_name: <%= ENV.fetch('VINETI_ACTIVEMQ_EVENT_DROP_QUEUE', 'EventServicev1.ERROR.Q') %>
+  type: 'queue'
+  subscribers:
+    - id: 'drop_queue'
+      class_name: 'Vineti::Notifications::DefaultConsumers::DropQueue'
+- event_name: <%= ENV.fetch('VINETI_ACTIVE_RESPONSE_TOPIC', 'EventServicev1.RESP.Q') %>
+  type: 'queue'
+  subscribers:
+    - id: 'response_queue'
+      class_name: 'Vineti::Notifications::DefaultConsumers::ResponseQueue'
+- event_name: topic_subscription
+  type: 'topic'
+  subscribers:
+    - id: 'topic_subscription'
+      class_name: 'Vineti::Notifications::DefaultConsumers::TopicSubscription'
+- event_name: topic_unsubscription
+  type: 'topic'
+  subscribers:
+    - id: 'topic_unsubscription'
+      class_name: 'Vineti::Notifications::DefaultConsumers::TopicUnsubscription'
+- event_name: 'vineti_event'
+  type: 'queue'
+  subscribers:
+    - id: 'vineti_event'
+      class_name: 'Vineti::Notifications::DefaultConsumers::VinetiEvent'
